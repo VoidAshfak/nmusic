@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
-import { Spotlight } from './ui/Spotlight'
-
+import { Spotlight } from '@/components/ui/Spotlight'
+import {Button} from '@/components/ui/moving-border'
 
 function HeroSection() {
     return (
@@ -21,7 +21,14 @@ function HeroSection() {
                     Dive into our comprehensive music courses and transform your musical journey today. Whether you're a beginner or looking to refine your skills, join us to unlock your true potential.
                 </p>
                 <div className="mt-4">
-                    
+                    <Link href={"courses"}>
+                        <Button
+                            duration={1500}
+                            borderRadius='1.75rem'
+                            className='bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800 cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-800'
+                            borderClassName='bg-[radial-gradient(#94d2ff_40%,transparent_80%)]'
+                        >Start Learning</Button>
+                    </Link>
                 </div>
             </div>
         </div>
