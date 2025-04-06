@@ -1,8 +1,8 @@
-"use client";
+// "use client";
 
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
-import GridBackground from "@/components/GridBackground";
+// import GridBackground from "@/components/GridBackground";
 import { cn } from "@/lib/utils"
 
 
